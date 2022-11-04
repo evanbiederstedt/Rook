@@ -1,12 +1,11 @@
 Package: Rook
 Type: Package
-Title: Rook - a web server interface for R
+Title: Rook - a Web Server Interface for R
 Version: 1.2
 Date: 2022-Nov-03
 Author: Jeffrey Horner [aut], Evan Biederstedt [aut, cre]
 Maintainer: Evan Biederstedt <evan.biederstedt@gmail.com>
-Description: This package contains the Rook specification and
- convenience software for building and running Rook applications. To
+Description: An HTTP web server for R. The documentation contains the Rook specification and details for building and running Rook applications. To
  get started, be sure and read the 'Rook' help file first.
 Depends: R (>= 2.13.0)
 Imports: utils, tools, methods, brew
