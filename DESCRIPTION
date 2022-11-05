@@ -8,7 +8,7 @@ Depends: R (>= 2.13.0)
 Imports: utils, tools, methods, brew
 License: GPL-2
 LazyLoad: yes
-URL: https://https://github.com/evanbiederstedt/rook
+URL: https://github.com/evanbiederstedt/rook
 BugReports: https://github.com/evanbiederstedt/rook/issues
 Author: Jeffrey Horner [aut], Evan Biederstedt [aut, cre]
 Maintainer: Evan Biederstedt <evan.biederstedt@gmail.com>
