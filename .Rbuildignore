@@ -1,5 +1,11 @@
-.Rproj.user
-.Rhistory
-.RData
-.lvimrc
-.git
+^.*\.Rproj$
+^\.Rproj\.user$
+.travis.yml
+CHANGELOG.md
+^LICENSE\.md$
+^docker$
+^doc$
+^Meta$
+^vignettes\*.md$
+^vignettes\figure$
+^\.circleci$
