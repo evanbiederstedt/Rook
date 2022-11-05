@@ -10,7 +10,6 @@ The original maintainer didn't respond to fix various issues which required the 
 This fork fixes those issues. As a consequence, I ([@evanbiederstedt](https://github.com/evanbiederstedt)) am the new maintainer. 
 
 
-
 Rook: A web server interface for R
 =======================================
 
