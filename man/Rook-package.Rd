@@ -7,7 +7,7 @@ Rook: A web server interface and package for R
 }
 \description{
     This help page defines the Rook specification. It borrows heavily
-    from Ruby's Rack project: \url{http://rack.rubyforge.org/}.
+    from Ruby's Rack project: \url{https://github.com/rack/rack}.
 
     After reading this document, read the \code{\link{Rhttpd}} help file
     as it will get you familiar with installing and running \code{Rook}

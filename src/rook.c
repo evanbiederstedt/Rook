@@ -27,10 +27,15 @@ SEXP rawmatch( SEXP needle, SEXP haystack, SEXP allMatches){
       error_return("all must be a logical vector")
          all = LOGICAL(allMatches)[0];
 
-   if (n2 > n1) return allocVector(INTSXP,0);
+   if (n2 > n1) {
+      SEXP result = PROTECT(allocVector(INTSXP,0));
+      UNPROTECT(1);
+
+      return result;
+   }
 
    k = 0;
-   ans = allocVector(INTSXP, all? (int)(n1 / n2) : 1);
+   ans = PROTECT(allocVector(INTSXP, all? (int)(n1 / n2) : 1));
 
    for (i = 0; i < n1; i++){
       if (x1[i] == x2[0]){
@@ -46,17 +51,19 @@ SEXP rawmatch( SEXP needle, SEXP haystack, SEXP allMatches){
    }
    if (k == LENGTH(ans)) return ans;
 
-   newans = allocVector(INTSXP,k);
+   newans = PROTECT(allocVector(INTSXP,k));
    while(k) {k--;INTEGER(newans)[k] = INTEGER(ans)[k];}
+
+   UNPROTECT(2);
    return newans;
 }
 
-R_CallMethodDef callMethods[]  = {
+R_CallMethodDef CallEntries[]  = {
    {"rawmatch", (DL_FUNC) &rawmatch, 3},
    {NULL, NULL, 0}
 };
 
-void R_init_Rook(DllInfo *info) {
-   R_registerRoutines(info, NULL, callMethods, NULL, NULL);
-   /*	R_useDynamicSymbols(info, FALSE);*/
+void R_init_Rook(DllInfo *dll) {
+   R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+   R_useDynamicSymbols(dll, FALSE);
 }
