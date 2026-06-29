@@ -1,6 +1,14 @@
 Package: Rook
+Version: 1.2.1
 Title: HTTP Web Server for R
-Version: 1.2
+Authors@R: c(person(given = "Jeffrey",
+                    family = "Horner",
+                    role = "aut"),
+             person(given = "Evan",
+                    family = "Biederstedt",
+                    role = c("aut", "cre"),
+                    email = "evan.biederstedt@gmail.com"))
+Version: 1.2.1
 Date: 2022-11-05
 Description: An HTTP web server for R with a documented API to interface between R and the server. The documentation contains the Rook specification and details for building and running Rook applications. To get started, be sure and read the 'Rook' help file first.
 Encoding: UTF-8
@@ -10,5 +18,4 @@ License: GPL-2
 LazyLoad: yes
 URL: https://github.com/evanbiederstedt/rook
 BugReports: https://github.com/evanbiederstedt/rook/issues
-Author: Jeffrey Horner [aut], Evan Biederstedt [aut, cre]
 Maintainer: Evan Biederstedt <evan.biederstedt@gmail.com>
