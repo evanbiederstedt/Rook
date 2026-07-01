@@ -144,6 +144,6 @@ Citation
 If you find `Rook` useful for your publication, please cite:
 
 ```
-Jeffrey Horner and Evan Biederstedt (2022). Rook: HTTP Web Server for R. 
-R package version 1.2. https://CRAN.R-project.org/package=Rook
+Jeffrey Horner and Evan Biederstedt (2026). Rook: HTTP Web Server for R. 
+R package version 1.2.1. https://CRAN.R-project.org/package=Rook
 ```
