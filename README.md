@@ -137,3 +137,13 @@ The Body
 This is either a character or raw vector. If the character vector is
 named with value 'file' then value of the vector is interpreted as the
 location of a file.
+
+Citation
+--------
+
+If you find `Rook` useful for your publication, please cite:
+
+```
+Jeffrey Horner and Evan Biederstedt (2022). Rook: HTTP Web Server for R. 
+R package version 1.2. https://CRAN.R-project.org/package=Rook
+```
